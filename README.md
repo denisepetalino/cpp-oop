@@ -9,10 +9,11 @@ https://www.codecademy.com/enrolled/courses/learn-object-oriented-programming-wi
 
 ## Objectives
 
-- Build a solid foundation in quantum computing concepts.
-- Understand how qubits, superposition and entanglement work at a high level.
-- Explore core quantum algorithms and their use cases.
-- Connect quantum computing concepts to cybersecurity and cryptography.
+- Build a solid foundation in **C++ object-oriented programming**.
+- Learn how to design classes with clear responsibilities and maintainable structure.
+- Practice core OOP concepts: **encapsulation, abstraction, inheritance and polymorphism**.
+- Improve code quality through **constructors/destructors**, **access control** and clean APIs.
+- Apply OOP principles through small, practical projects.
 
 ---
 
