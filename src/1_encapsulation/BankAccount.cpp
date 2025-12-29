@@ -1,25 +1,23 @@
 #include "BankAccount.hpp"
 
-//constructor
-BankAccount::BankAccount(const std::string& bankAccountNumber, double bankBalance) : accountNumber(bankAccountNumber), balance(bankBalance) {}
+BankAccount::BankAccount(const std::string& bankAccountNumber, double bankBalance) : accountNumber(bankAccountNumber), balance(bankBalance){}
 
 //getter methods
 std::string BankAccount::getAccountNumber()
 const{
-    return accountNumber;
+  return accountNumber;
 }
 
 double BankAccount::getBalance()
 const{
-    return balance;
+  return balance;
 }
 
 //setter methods
 void BankAccount::setAccountNumber(const std::string& newAccountNumber){
-    accountNumber = newAccountNumber;
+  accountNumber = newAccountNumber;
 }
 
 void BankAccount::setBalance(double newBalance){
-    balance = newBalance;
+  balance = newBalance;
 }
-
