@@ -7,10 +7,8 @@ class BankAccount{
   private:
   std::string accountNumber;
   double balance;
-  
   //nested class
   class Transaction{
-
     private:
     BankAccount& account;
     double amount;
@@ -28,7 +26,7 @@ class BankAccount{
       std::cout<< "Depositing: " << amount << " New balance: " << account.balance << "\n";
     }
 
-    void withdraw(){
+    bool withdraw(){
       if (account.balance < amount){
         std::cout << "Withdrawal of " << amount << " failed. Insufficient balance: " << account.balance;
       } else {
@@ -48,4 +46,7 @@ class BankAccount{
   //setter methods
   void setAccountNumber(const std::string& newAccountNumber);
   void setBalance(double newBalance);
+  // public transaction methods
+  void deposit(double amount);
+  bool withdraw(double amount);
 };

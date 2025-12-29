@@ -21,3 +21,13 @@ void BankAccount::setAccountNumber(const std::string& newAccountNumber){
 void BankAccount::setBalance(double newBalance){
   balance = newBalance;
 }
+
+void BankAccount::deposit(double amount) {
+  Transaction t(*this, amount);
+  t.deposit();
+}
+
+bool BankAccount::withdraw(double amount) {
+  Transaction t(*this, amount);
+  return t.withdraw();
+}

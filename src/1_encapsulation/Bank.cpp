@@ -14,3 +14,24 @@ BankAccount* Bank::findAccount(const std::string& accountNumber){
   }
   return nullptr;
 }
+
+int Bank::transferMoney(const std::string& sourceAccountNumber, const std::string& destinationAccountNumber,double amount){
+  BankAccount* source = findAccount(sourceAccountNumber);
+  BankAccount* destination = findAccount(destinationAccountNumber);
+  
+  if (source == nullptr || destination == nullptr) {
+    return 2;
+  }
+  if (amount <= 0) {
+    return 3;
+  }
+  if (source->getBalance() < amount) {
+    return 3;
+  }
+  bool withdrew = source->withdraw(amount);
+  if (!withdrew) {
+    return 3;
+  }
+  destination->deposit(amount);
+  return 1;
+}
