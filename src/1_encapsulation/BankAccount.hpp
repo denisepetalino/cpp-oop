@@ -7,6 +7,9 @@ class BankAccount{
     private:
     std::string accountNumber;
     double balance;
+    // nested class
+    class Transaction{
+    };
     public:
     //constructor
     BankAccount(const std::string& bankAccountNumber, double bankBalance);
