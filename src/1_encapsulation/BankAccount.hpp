@@ -7,8 +7,10 @@ class BankAccount{
   private:
   std::string accountNumber;
   double balance;
+  
   //nested class
   class Transaction{
+
     private:
     BankAccount& account;
     double amount;
