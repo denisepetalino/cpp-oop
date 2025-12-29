@@ -28,11 +28,13 @@ class BankAccount{
 
     bool withdraw(){
       if (account.balance < amount){
-        std::cout << "Withdrawal of " << amount << " failed. Insufficient balance: " << account.balance;
+        std::cout << " Withdrawal of " << amount << " failed. Insufficient balance: " << account.balance;
+        return false;
       } else {
         std::cout<< "Current balance: " << account.balance;
         account.balance -= amount;
-        std::cout << "Withdrawal of " << amount << " successful. New balance: " << account.balance;
+        std::cout << " Withdrawal of " << amount << " successful. New balance: " << account.balance;
+        return true;
       }
     }
   };
