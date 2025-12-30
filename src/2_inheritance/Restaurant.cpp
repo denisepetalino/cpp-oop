@@ -9,3 +9,7 @@ void Restaurant::displayInfo(){
   cout << "Restaurant name: " << name;
   cout << "Restaurant address: " << address;
 }
+
+void describeCuisine(){
+  cout << "This restaurant serves various types of cuisines.";
+}

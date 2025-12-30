@@ -12,6 +12,7 @@ class Restaurant {
   public:
   Restaurant(string n, string adr);
   void displayInfo();
+  void describeCuisine();
 };
 
 #endif
