@@ -1,15 +1,16 @@
-#include "Restaurant.hpp"
-#include <iostream>
+#ifndef MENU_ITEM_HPP
+#define MENU_ITEM_HPP
 
-Restaurant::Restaurant(string n, string adr) : name(n), address(adr){
+#include <string>
+using namespace std;
 
-}
+class MenuItem {
+  private:
+  string name;
+  double price;
+  public:
+  MenuItem(string itemName, double itemPrice):name(itemName), price(itemPrice){}
+  void display() const;
+};
 
-void Restaurant::displayInfo(){
-  cout << "Restaurant name: " << name;
-  cout << "Restaurant address: " << address;
-}
-
-void Restaurant::describeCuisine(){
-  cout << "This restaurant serves various types of cuisines.";
-}
+#endif

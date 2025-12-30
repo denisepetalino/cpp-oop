@@ -10,7 +10,7 @@ class MenuItem {
   double price;
   public:
   MenuItem(string itemName, double itemPrice):name(itemName), price(itemPrice){}
-  void display();
+  void display() const;
 };
 
 #endif
