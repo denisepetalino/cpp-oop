@@ -8,6 +8,12 @@ Character::Character(){
   this->power = 10;
 }
 
+Character::Character(string name, int health, int power){
+  this->name = name;
+  this->health = health;
+  this->power = power;
+}
+
 void Character::attack(){
   cout << "Basic Low Attack" << endl;
 }

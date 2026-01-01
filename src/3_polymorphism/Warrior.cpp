@@ -1,6 +1,6 @@
 #include "Warrior.hpp"
 
-Warrior::Warrior() : Character(){
+Warrior::Warrior(string name, int health, int power) : Character(name, health, power){
 }
 
 void Warrior::attack(){

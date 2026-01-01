@@ -12,6 +12,7 @@ class Character{
   int power;
   public:
   Character();
+  Character(string name, int health, int power);
   virtual void attack();
   virtual void displayInfo();
 };

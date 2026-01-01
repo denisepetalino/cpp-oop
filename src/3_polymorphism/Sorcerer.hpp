@@ -4,7 +4,7 @@
 #include "Character.hpp"
 class Sorcerer:public Character{
   public:
-  Sorcerer();
+  Sorcerer(string name, int health, int power);
   void attack() override;
 };
 
